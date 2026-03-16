@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "ホーム",
+    "products": "商品",
+    "faq": "よくある質問",
+    "about": "会社概要",
+    "contact": "お問い合わせ",
+    "redeem": "eSIMを交換する",
+    "language": "言語"
+  },
+  "home": {
+    "title": "世界中でつながる",
+    "subtitle": "eSIMバウチャーを今すぐ交換して、旅行先で高速インターネットをお楽しみください。",
+    "cta": "eSIMを交換",
+    "steps": {
+      "title": "ご利用方法",
+      "step1": {
+        "title": "コードを入力",
+        "desc": "確認メールに記載されている予約コードを入力します。"
+      },
+      "step2": {
+        "title": "内容の確認",
+        "desc": "eSIMプランを確認し、交換する数量を選択します。"
+      },
+      "step3": {
+        "title": "接続完了",
+        "desc": "QRコードをスキャンして、eSIMをすぐに有効化します。"
+      }
+    },
+    "partners": "信頼される旅行パートナー"
+  },
+  "redeem": {
+    "title": "バウチャーの交換",
+    "subtitle": "予約コードを入力してeSIMを受け取ってください。",
+    "code_label": "予約コード",
+    "code_placeholder": "例: BK-12345678",
+    "submit": "交換する",
+    "contact_help": "お困りですか？サポートに連絡",
+    "booking": {
+      "product": "商品",
+      "date": "利用日",
+      "total": "合計eSIM数",
+      "remaining": "残り",
+      "redeemed": "交換済み",
+      "history": "交換履歴",
+      "history_date": "日付",
+      "history_qty": "数量",
+      "history_email": "メール",
+      "quantity_label": "交換する数量",
+      "email_label": "メールアドレス（バックアップ用）",
+      "email_placeholder": "name@example.com",
+      "confirm": "確認してeSIMを取得"
+    },
+    "success": {
+      "title": "交換が成功しました！",
+      "desc": "下のQRコードをスキャンしてeSIMをインストールしてください。",
+      "download": "QRをダウンロード",
+      "email_sent": "バックアップのコピーがこちらに送信されました:",
+      "redeem_another": "別のコードを交換"
+    },
+    "errors": {
+      "not_found": "このコードの予約は見つかりませんでした。再確認するか、ホットラインにご連絡ください。",
+      "expired": "このバウチャーは期限切れです。サポートにご連絡ください。",
+      "fully_redeemed": "このバウチャーは既にすべて交換されています。",
+      "api_error": "サーバー通信中にエラーが発生しました。後でもう一度お試しください。",
+      "rate_limited": "試行回数が多すぎます。後で再試行してください。"
+    }
+  },
+  "footer": {
+    "company": "eSIM 交換ハブ",
+    "rights": "All rights reserved.",
+    "links": "リンク",
+    "support": "サポート"
+  }
+}

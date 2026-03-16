@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "首页",
+    "products": "产品",
+    "faq": "常见问题",
+    "about": "关于我们",
+    "contact": "联系我们",
+    "redeem": "兑换 eSIM",
+    "language": "语言"
+  },
+  "home": {
+    "title": "全球无缝连接",
+    "subtitle": "立即兑换您的 eSIM 代金券，随时随地享受高速网络。",
+    "cta": "兑换 eSIM",
+    "steps": {
+      "title": "使用指南",
+      "step1": {
+        "title": "输入验证码",
+        "desc": "请输入确认邮件中的订单号。"
+      },
+      "step2": {
+        "title": "确认信息",
+        "desc": "检查您的 eSIM 套餐并选择兑换数量。"
+      },
+      "step3": {
+        "title": "获取连接",
+        "desc": "扫描二维码，立即激活您的 eSIM。"
+      }
+    },
+    "partners": "热门旅行合作伙伴的信赖之选"
+  },
+  "redeem": {
+    "title": "兑换代金券",
+    "subtitle": "输入订单号以领取您的 eSIM。",
+    "code_label": "订单号",
+    "code_placeholder": "例：BK-12345678",
+    "submit": "兑换",
+    "contact_help": "需要帮助？联系客服",
+    "booking": {
+      "product": "产品",
+      "date": "使用日期",
+      "total": "eSIM 总数",
+      "remaining": "剩余数量",
+      "redeemed": "已兑换",
+      "history": "兑换记录",
+      "history_date": "日期",
+      "history_qty": "数量",
+      "history_email": "邮箱",
+      "quantity_label": "兑换数量",
+      "email_label": "电子邮箱地址 (用于备份)",
+      "email_placeholder": "name@example.com",
+      "confirm": "确认并获取 eSIM"
+    },
+    "success": {
+      "title": "兑换成功！",
+      "desc": "扫描下方二维码安装您的 eSIM。",
+      "download": "下载二维码",
+      "email_sent": "备份已发送至：",
+      "redeem_another": "继续兑换"
+    },
+    "errors": {
+      "not_found": "找不到对应订单。请检查或联系客服。",
+      "expired": "此代金券已过期。请联系客服寻求帮助。",
+      "fully_redeemed": "此代金券已全部兑换完毕。",
+      "api_error": "与服务器通信时发生错误，请稍后再试。",
+      "rate_limited": "尝试次数过多，请稍后再试。"
+    }
+  },
+  "footer": {
+    "company": "eSIM 兑换中心",
+    "rights": "保留所有权利。",
+    "links": "快速链接",
+    "support": "客户支持"
+  }
+}

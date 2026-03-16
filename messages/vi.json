@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Trang Chủ",
+    "products": "Sản Phẩm",
+    "faq": "Câu Hỏi Thường Gặp",
+    "about": "Về Chúng Tôi",
+    "contact": "Liên Hệ",
+    "redeem": "Đổi eSIM",
+    "language": "Ngôn ngữ"
+  },
+  "home": {
+    "title": "Kết Nối Xuyên Quốc Gia",
+    "subtitle": "Đổi mã voucher eSIM của bạn ngay lập tức và tận hưởng internet tốc độ cao mọi lúc mọi nơi.",
+    "cta": "Đổi eSIM Ngay",
+    "steps": {
+      "title": "Hướng Dẫn",
+      "step1": {
+        "title": "Nhập Mã",
+        "desc": "Nhập mã đặt chỗ từ email xác nhận của bạn."
+      },
+      "step2": {
+        "title": "Xác Nhận",
+        "desc": "Kiểm tra gói eSIM và chọn số lượng muốn đổi."
+      },
+      "step3": {
+        "title": "Kết Nối",
+        "desc": "Quét mã QR và kích hoạt eSIM ngay lập tức."
+      }
+    },
+    "partners": "Đối tác tin cậy của"
+  },
+  "redeem": {
+    "title": "Đổi Mã Voucher",
+    "subtitle": "Nhập mã đặt chỗ để nhận eSIM của bạn.",
+    "code_label": "Mã Đặt Chỗ",
+    "code_placeholder": "ví dụ: BK-12345678",
+    "submit": "Dổi Ngay",
+    "contact_help": "Cần trợ giúp? Liên hệ CSKH",
+    "booking": {
+      "product": "Sản Phẩm",
+      "date": "Ngày Sử Dụng",
+      "total": "Tổng Số eSIM",
+      "remaining": "Còn Lại",
+      "redeemed": "Đã Đổi",
+      "history": "Lịch Sử Đổi Mã",
+      "history_date": "Ngày",
+      "history_qty": "Số Lượng",
+      "history_email": "Email",
+      "quantity_label": "Số Lượng Muốn Đổi",
+      "email_label": "Địa Chỉ Email (để sao lưu)",
+      "email_placeholder": "name@example.com",
+      "confirm": "Xác Nhận & Nhận eSIM"
+    },
+    "success": {
+      "title": "Đổi Mã Thành Công!",
+      "desc": "Quét mã QR bên dưới để cài đặt eSIM của bạn.",
+      "download": "Tải Mã QR",
+      "email_sent": "Bản sao lưu cũng đã được gửi tới:",
+      "redeem_another": "Đổi Mã Khác"
+    },
+    "errors": {
+      "not_found": "Chúng tôi không tìm thấy đặt chỗ với mã này. Vui lòng kiểm tra lại hoặc liên hệ tổng đài.",
+      "expired": "Voucher này đã hết hạn. Vui lòng liên hệ tổng đài để được trợ giúp.",
+      "fully_redeemed": "Voucher này đã được đổi hết.",
+      "api_error": "Đã xảy ra lỗi khi kết nối với máy chủ. Vui lòng thử lại sau.",
+      "rate_limited": "Quá nhiều lần thử, vui lòng thử lại sau."
+    }
+  },
+  "footer": {
+    "company": "Trung Tâm Đổi eSIM",
+    "rights": "Bản quyền đã được bảo hộ.",
+    "links": "Liên Kết Nhanh",
+    "support": "Hỗ Trợ"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "faq": "FAQ",
+    "about": "About Us",
+    "contact": "Contact",
+    "redeem": "Redeem eSIM",
+    "language": "Language"
+  },
+  "home": {
+    "title": "Stay Connected Globally",
+    "subtitle": "Redeem your eSIM voucher instantly and enjoy high-speed internet wherever you travel.",
+    "cta": "Redeem Your eSIM",
+    "steps": {
+      "title": "How It Works",
+      "step1": {
+        "title": "Enter Code",
+        "desc": "Input the booking code from your confirmation email."
+      },
+      "step2": {
+        "title": "Verify Details",
+        "desc": "Check your eSIM plan and select how many to redeem."
+      },
+      "step3": {
+        "title": "Get Connected",
+        "desc": "Scan the QR code and activate your eSIM immediately."
+      }
+    },
+    "partners": "Trusted by Top Travel Partners"
+  },
+  "redeem": {
+    "title": "Redeem Your Voucher",
+    "subtitle": "Enter your booking code to claim your eSIMs.",
+    "code_label": "Booking Code",
+    "code_placeholder": "e.g., BK-12345678",
+    "submit": "Redeem",
+    "contact_help": "Need help? Contact support",
+    "booking": {
+      "product": "Product",
+      "date": "Date of Use",
+      "total": "Total eSIMs",
+      "remaining": "Remaining",
+      "redeemed": "Redeemed",
+      "history": "Redemption History",
+      "history_date": "Date",
+      "history_qty": "Quantity",
+      "history_email": "Email",
+      "quantity_label": "Quantity to Redeem",
+      "email_label": "Email Address (for backup)",
+      "email_placeholder": "name@example.com",
+      "confirm": "Confirm & Get eSIM"
+    },
+    "success": {
+      "title": "Redemption Successful!",
+      "desc": "Scan the QR code below to install your eSIM.",
+      "download": "Download QR",
+      "email_sent": "A backup copy has also been sent to:",
+      "redeem_another": "Redeem Another"
+    },
+    "errors": {
+      "not_found": "We couldn't find a booking with this code. Please double-check or contact our hotline.",
+      "expired": "This voucher has expired. Please contact our hotline for assistance.",
+      "fully_redeemed": "This voucher has already been fully redeemed.",
+      "api_error": "An error occurred while communicating with the server. Please try again later.",
+      "rate_limited": "Too many attempts, please try again later."
+    }
+  },
+  "footer": {
+    "company": "eSIM Redemption Hub",
+    "rights": "All rights reserved.",
+    "links": "Quick Links",
+    "support": "Support"
+  }
+}
