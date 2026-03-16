@@ -46,11 +46,9 @@ export default async function RootLayout({
     <html lang={locale} className={cn("font-sans", inter.variable)}>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
           <main className="flex-1 flex flex-col w-full">
             {children}
           </main>
-          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
