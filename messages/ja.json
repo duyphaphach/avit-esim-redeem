@@ -64,6 +64,88 @@
       "fully_redeemed": "このバウチャーは既にすべて交換されています。",
       "api_error": "サーバー通信中にエラーが発生しました。後でもう一度お試しください。",
       "rate_limited": "試行回数が多すぎます。後で再試行してください。"
+    },
+    "guide": {
+      "help_center": "eSIM ヘルプセンター",
+      "tabs": {
+        "redeem": "交換",
+        "devices": "対応端末",
+        "activate": "有効化",
+        "faq": "FAQ"
+      },
+      "redeem": {
+        "step1": {
+          "title": "予約メールを確認",
+          "description": "確認メールに記載の予約コードで購入情報を検索します。"
+        },
+        "step2": {
+          "title": "予約内容を確認",
+          "description": "交換前に利用者情報と残りeSIM数を確認します。"
+        },
+        "step3": {
+          "title": "交換するeSIM数を選択",
+          "description": "今必要な分だけ交換し、残りは後で有効化できます。"
+        },
+        "step4": {
+          "title": "受信用メールを確認",
+          "description": "各端末ですぐ設定できるよう、QRコードをメールで送信します。"
+        },
+        "step5": {
+          "title": "端末で設定して有効化",
+          "description": "利用する端末でQRコードを読み取り、手順に沿って有効化します。"
+        },
+        "tip": "ヒント: 安定した通信環境で交換し、利用予定の端末で直接QRコードを設定してください。"
+      },
+      "devices": {
+        "iphone": {
+          "title": "iPhone",
+          "model1": "iPhone XR 以降",
+          "model2": "iPhone SE（第2世代）以降"
+        },
+        "samsung": {
+          "title": "Samsung Galaxy",
+          "model1": "S20 以降",
+          "model2": "Z Flip/Fold シリーズ",
+          "model3": "Note 20 以降"
+        },
+        "google": {
+          "title": "Google Pixel",
+          "model1": "Pixel 3 以降"
+        },
+        "other": {
+          "title": "その他の端末",
+          "model1": "Oppo、Huawei、Motorola の多くの機種が eSIM に対応"
+        }
+      },
+      "activate": {
+        "iphone": {
+          "title": "iPhone",
+          "steps": "設定 → モバイル通信 → eSIM を追加 → QRコードを使用。"
+        },
+        "android": {
+          "title": "Android",
+          "steps": "設定 → ネットワークとインターネット → SIM → eSIM を追加 → QRコードをスキャン。"
+        },
+        "roaming_note": "渡航先に到着したら、新しい eSIM プロファイルのデータローミングを有効にしてください。"
+      },
+      "faq": {
+        "q1": {
+          "question": "eSIM はいつ交換すればよいですか？",
+          "answer": "旅行前いつでも交換可能です。利用開始時に設定・有効化してください。"
+        },
+        "q2": {
+          "question": "注文の一部だけ交換できますか？",
+          "answer": "はい。複数枚ある場合、今必要な枚数のみ交換できます。"
+        },
+        "q3": {
+          "question": "すでに全て交換済みの場合は？",
+          "answer": "全交換済みの状態が表示され、別のコード検索に戻れます。"
+        },
+        "q4": {
+          "question": "QRメールが届きません。どうすればよいですか？",
+          "answer": "迷惑メールフォルダを確認し、正しいメールアドレスで再試行してください。"
+        }
+      }
     }
   },
   "footer": {

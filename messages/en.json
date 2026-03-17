@@ -64,6 +64,88 @@
       "fully_redeemed": "This voucher has already been fully redeemed.",
       "api_error": "An error occurred while communicating with the server. Please try again later.",
       "rate_limited": "Too many attempts, please try again later."
+    },
+    "guide": {
+      "help_center": "eSIM Help Center",
+      "tabs": {
+        "redeem": "Redeem",
+        "devices": "Devices",
+        "activate": "Activate",
+        "faq": "FAQ"
+      },
+      "redeem": {
+        "step1": {
+          "title": "Find your booking email",
+          "description": "Use the booking code from your confirmation email to locate your purchase."
+        },
+        "step2": {
+          "title": "Verify your booking details",
+          "description": "Review traveler info and remaining eSIM quantity before redeeming."
+        },
+        "step3": {
+          "title": "Choose how many eSIMs to redeem",
+          "description": "Redeem only what you need now and keep unused eSIMs for later activation."
+        },
+        "step4": {
+          "title": "Confirm delivery email",
+          "description": "We send QR codes to your email so each device can install the eSIM quickly."
+        },
+        "step5": {
+          "title": "Install and activate on your phone",
+          "description": "Scan the QR code on the destination device and complete activation steps."
+        },
+        "tip": "Pro tip: Redeem while connected to stable internet, then install the QR code directly on the device you plan to use."
+      },
+      "devices": {
+        "iphone": {
+          "title": "iPhone",
+          "model1": "iPhone XR and newer",
+          "model2": "iPhone SE (2nd gen) and newer"
+        },
+        "samsung": {
+          "title": "Samsung Galaxy",
+          "model1": "S20 and newer",
+          "model2": "Z Flip/Fold series",
+          "model3": "Note 20 and newer"
+        },
+        "google": {
+          "title": "Google Pixel",
+          "model1": "Pixel 3 and newer"
+        },
+        "other": {
+          "title": "Other Devices",
+          "model1": "Many Oppo, Huawei, and Motorola models support eSIM"
+        }
+      },
+      "activate": {
+        "iphone": {
+          "title": "iPhone",
+          "steps": "Settings → Cellular → Add eSIM → Use QR Code."
+        },
+        "android": {
+          "title": "Android",
+          "steps": "Settings → Network & Internet → SIMs → Add eSIM → Scan QR Code."
+        },
+        "roaming_note": "Turn on Data Roaming for the new eSIM profile after arriving at your destination."
+      },
+      "faq": {
+        "q1": {
+          "question": "When should I redeem my eSIM?",
+          "answer": "Redeem any time before your trip. Install and activate when you are ready to use mobile data."
+        },
+        "q2": {
+          "question": "Can I redeem only part of my order?",
+          "answer": "Yes. If your booking has multiple eSIMs, you can redeem only the quantity you need now."
+        },
+        "q3": {
+          "question": "What happens if my booking is already fully redeemed?",
+          "answer": "The page will show a fully redeemed state and let you return to start another lookup."
+        },
+        "q4": {
+          "question": "I did not receive the QR email. What should I do?",
+          "answer": "Check spam/junk folders first, then retry with the correct email address."
+        }
+      }
     }
   },
   "footer": {

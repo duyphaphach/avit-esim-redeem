@@ -1,4 +1,5 @@
 'use client';
+import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import { RedeemForm } from '@/components/redeem/RedeemForm';
 import { BookingCard, BookingData } from '@/components/redeem/BookingCard';
@@ -13,67 +14,41 @@ type UIState = 'entry' | 'found' | 'success' | 'not_found' | 'expired' | 'fully_
 type ErrorUIState = 'not_found' | 'expired' | 'fully_redeemed' | 'api_error' | 'rate_limited';
 
 const redeemSteps = [
-  {
-    title: 'Find your booking email',
-    description: 'Use the booking code from your confirmation email to locate your purchase.',
-  },
-  {
-    title: 'Verify your booking details',
-    description: 'Review traveler info and remaining eSIM quantity before redeeming.',
-  },
-  {
-    title: 'Choose how many eSIMs to redeem',
-    description: 'Redeem only what you need now and keep unused eSIMs for later activation.',
-  },
-  {
-    title: 'Confirm delivery email',
-    description: 'We send QR codes to your email so each device can install the eSIM quickly.',
-  },
-  {
-    title: 'Install and activate on your phone',
-    description: 'Scan the QR code on the destination device and complete activation steps.',
-  },
+  { titleKey: 'guide.redeem.step1.title', descriptionKey: 'guide.redeem.step1.description' },
+  { titleKey: 'guide.redeem.step2.title', descriptionKey: 'guide.redeem.step2.description' },
+  { titleKey: 'guide.redeem.step3.title', descriptionKey: 'guide.redeem.step3.description' },
+  { titleKey: 'guide.redeem.step4.title', descriptionKey: 'guide.redeem.step4.description' },
+  { titleKey: 'guide.redeem.step5.title', descriptionKey: 'guide.redeem.step5.description' },
 ];
 
 const compatibleDevices = [
   {
-    title: 'iPhone',
-    models: ['iPhone XR and newer', 'iPhone SE (2nd gen) and newer'],
+    titleKey: 'guide.devices.iphone.title',
+    models: ['guide.devices.iphone.model1', 'guide.devices.iphone.model2'],
   },
   {
-    title: 'Samsung Galaxy',
-    models: ['S20 and newer', 'Z Flip/Fold series', 'Note 20 and newer'],
+    titleKey: 'guide.devices.samsung.title',
+    models: ['guide.devices.samsung.model1', 'guide.devices.samsung.model2', 'guide.devices.samsung.model3'],
   },
   {
-    title: 'Google Pixel',
-    models: ['Pixel 3 and newer'],
+    titleKey: 'guide.devices.google.title',
+    models: ['guide.devices.google.model1'],
   },
   {
-    title: 'Other Devices',
-    models: ['Many Oppo, Huawei, and Motorola models support eSIM'],
+    titleKey: 'guide.devices.other.title',
+    models: ['guide.devices.other.model1'],
   },
 ];
 
 const faqItems = [
-  {
-    question: 'When should I redeem my eSIM?',
-    answer: 'Redeem any time before your trip. Install and activate when you are ready to use mobile data.',
-  },
-  {
-    question: 'Can I redeem only part of my order?',
-    answer: 'Yes. If your booking has multiple eSIMs, you can redeem only the quantity you need now.',
-  },
-  {
-    question: 'What happens if my booking is already fully redeemed?',
-    answer: 'The page will show a fully redeemed state and let you return to start another lookup.',
-  },
-  {
-    question: 'I did not receive the QR email. What should I do?',
-    answer: 'Check spam/junk folders first, then retry with the correct email address.',
-  },
+  { questionKey: 'guide.faq.q1.question', answerKey: 'guide.faq.q1.answer' },
+  { questionKey: 'guide.faq.q2.question', answerKey: 'guide.faq.q2.answer' },
+  { questionKey: 'guide.faq.q3.question', answerKey: 'guide.faq.q3.answer' },
+  { questionKey: 'guide.faq.q4.question', answerKey: 'guide.faq.q4.answer' },
 ];
 
 export default function RedeemPage() {
+  const t = useTranslations('redeem');
   const accentTabClass = 'border-[#ff7c2a] bg-[#ff7c2a]/10 text-[#ff7c2a]';
   const [activeTab, setActiveTab] = useState<'redeem' | 'devices' | 'activate' | 'faq'>('redeem');
   const [uiState, setUiState] = useState<UIState>('entry');
@@ -177,7 +152,7 @@ export default function RedeemPage() {
 
         <Card className="h-fit">
           <CardHeader className="border-b">
-            <CardTitle className="text-sm font-semibold">eSIM Help Center</CardTitle>
+            <CardTitle className="text-sm font-semibold">{t('guide.help_center')}</CardTitle>
             <div className="mt-3 grid grid-cols-2 gap-2">
               <button
                 type="button"
@@ -188,7 +163,7 @@ export default function RedeemPage() {
               >
                 <span className="inline-flex items-center gap-2">
                   <QrCode className="h-4 w-4" />
-                  Redeem
+                  {t('guide.tabs.redeem')}
                 </span>
               </button>
               <button
@@ -200,7 +175,7 @@ export default function RedeemPage() {
               >
                 <span className="inline-flex items-center gap-2">
                   <Smartphone className="h-4 w-4" />
-                  Devices
+                  {t('guide.tabs.devices')}
                 </span>
               </button>
               <button
@@ -212,7 +187,7 @@ export default function RedeemPage() {
               >
                 <span className="inline-flex items-center gap-2">
                   <Power className="h-4 w-4" />
-                  Activate
+                  {t('guide.tabs.activate')}
                 </span>
               </button>
               <button
@@ -224,7 +199,7 @@ export default function RedeemPage() {
               >
                 <span className="inline-flex items-center gap-2">
                   <HelpCircle className="h-4 w-4" />
-                  FAQ
+                  {t('guide.tabs.faq')}
                 </span>
               </button>
             </div>
@@ -235,13 +210,13 @@ export default function RedeemPage() {
               <>
                 <div className="space-y-3">
                   {redeemSteps.map((step, index) => (
-                    <div key={step.title} className="flex gap-3 rounded-md border p-3">
+                    <div key={step.titleKey} className="flex gap-3 rounded-md border p-3">
                       <span className="inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-[#ff7c2a] text-[11px] font-semibold text-white">
                         {index + 1}
                       </span>
                       <div>
-                        <p className="text-sm font-medium">{step.title}</p>
-                        <p className="text-xs text-muted-foreground">{step.description}</p>
+                        <p className="text-sm font-medium">{t(step.titleKey)}</p>
+                        <p className="text-xs text-muted-foreground">{t(step.descriptionKey)}</p>
                       </div>
                     </div>
                   ))}
@@ -250,7 +225,7 @@ export default function RedeemPage() {
                 <div className="flex gap-2 rounded-md border border-[#ff7c2a]/40 bg-[#ff7c2a]/10 p-3 text-xs">
                   <AlertCircle className="mt-0.5 h-4 w-4 shrink-0 text-[#ff7c2a]" />
                   <p className="text-muted-foreground">
-                    Pro tip: Redeem while connected to stable internet, then install the QR code directly on the device you plan to use.
+                    {t('guide.redeem.tip')}
                   </p>
                 </div>
               </>
@@ -259,14 +234,14 @@ export default function RedeemPage() {
             {activeTab === 'devices' && (
               <div className="space-y-3">
                 {compatibleDevices.map((device) => (
-                  <div key={device.title} className="rounded-md border p-3">
+                  <div key={device.titleKey} className="rounded-md border p-3">
                     <p className="mb-2 flex items-center gap-2 text-sm font-medium">
                       <CheckCircle2 className="h-4 w-4 text-[#ff7c2a]" />
-                      {device.title}
+                      {t(device.titleKey)}
                     </p>
                     <ul className="space-y-1 text-xs text-muted-foreground">
                       {device.models.map((model) => (
-                        <li key={model}>• {model}</li>
+                        <li key={model}>• {t(model)}</li>
                       ))}
                     </ul>
                   </div>
@@ -277,15 +252,15 @@ export default function RedeemPage() {
             {activeTab === 'activate' && (
               <div className="space-y-3 text-xs text-muted-foreground">
                 <div className="rounded-md border p-3">
-                  <p className="mb-2 text-sm font-medium text-foreground">iPhone</p>
-                  <p>Settings → Cellular → Add eSIM → Use QR Code.</p>
+                  <p className="mb-2 text-sm font-medium text-foreground">{t('guide.activate.iphone.title')}</p>
+                  <p>{t('guide.activate.iphone.steps')}</p>
                 </div>
                 <div className="rounded-md border p-3">
-                  <p className="mb-2 text-sm font-medium text-foreground">Android</p>
-                  <p>Settings → Network &amp; Internet → SIMs → Add eSIM → Scan QR Code.</p>
+                  <p className="mb-2 text-sm font-medium text-foreground">{t('guide.activate.android.title')}</p>
+                  <p>{t('guide.activate.android.steps')}</p>
                 </div>
                 <div className="rounded-md border border-green-600/30 bg-green-500/10 p-3 text-green-900">
-                  Turn on Data Roaming for the new eSIM profile after arriving at your destination.
+                  {t('guide.activate.roaming_note')}
                 </div>
               </div>
             )}
@@ -293,10 +268,10 @@ export default function RedeemPage() {
             {activeTab === 'faq' && (
               <Accordion type="single" collapsible>
                 {faqItems.map((item, index) => (
-                  <AccordionItem key={item.question} value={`faq-${index}`}>
-                    <AccordionTrigger className="text-xs">{item.question}</AccordionTrigger>
+                  <AccordionItem key={item.questionKey} value={`faq-${index}`}>
+                    <AccordionTrigger className="text-xs">{t(item.questionKey)}</AccordionTrigger>
                     <AccordionContent>
-                      <p className="text-xs text-muted-foreground">{item.answer}</p>
+                      <p className="text-xs text-muted-foreground">{t(item.answerKey)}</p>
                     </AccordionContent>
                   </AccordionItem>
                 ))}

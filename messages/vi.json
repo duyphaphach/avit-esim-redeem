@@ -64,6 +64,88 @@
       "fully_redeemed": "Voucher này đã được đổi hết.",
       "api_error": "Đã xảy ra lỗi khi kết nối với máy chủ. Vui lòng thử lại sau.",
       "rate_limited": "Quá nhiều lần thử, vui lòng thử lại sau."
+    },
+    "guide": {
+      "help_center": "Trung Tâm Hỗ Trợ eSIM",
+      "tabs": {
+        "redeem": "Đổi Mã",
+        "devices": "Thiết Bị",
+        "activate": "Kích Hoạt",
+        "faq": "Câu Hỏi"
+      },
+      "redeem": {
+        "step1": {
+          "title": "Tìm email đặt chỗ",
+          "description": "Dùng mã đặt chỗ trong email xác nhận để tìm giao dịch của bạn."
+        },
+        "step2": {
+          "title": "Xác nhận thông tin đặt chỗ",
+          "description": "Kiểm tra thông tin hành khách và số lượng eSIM còn lại trước khi đổi."
+        },
+        "step3": {
+          "title": "Chọn số lượng eSIM muốn đổi",
+          "description": "Chỉ đổi số lượng cần dùng ngay, phần còn lại có thể kích hoạt sau."
+        },
+        "step4": {
+          "title": "Xác nhận email nhận mã",
+          "description": "Chúng tôi gửi QR đến email để bạn cài eSIM nhanh trên từng thiết bị."
+        },
+        "step5": {
+          "title": "Cài đặt và kích hoạt trên điện thoại",
+          "description": "Quét QR trên đúng thiết bị cần dùng và làm theo các bước kích hoạt."
+        },
+        "tip": "Mẹo: Hãy đổi mã khi có kết nối mạng ổn định, sau đó cài QR trực tiếp trên thiết bị sẽ sử dụng."
+      },
+      "devices": {
+        "iphone": {
+          "title": "iPhone",
+          "model1": "iPhone XR trở lên",
+          "model2": "iPhone SE (thế hệ 2) trở lên"
+        },
+        "samsung": {
+          "title": "Samsung Galaxy",
+          "model1": "S20 trở lên",
+          "model2": "Dòng Z Flip/Fold",
+          "model3": "Note 20 trở lên"
+        },
+        "google": {
+          "title": "Google Pixel",
+          "model1": "Pixel 3 trở lên"
+        },
+        "other": {
+          "title": "Thiết Bị Khác",
+          "model1": "Nhiều mẫu Oppo, Huawei và Motorola cũng hỗ trợ eSIM"
+        }
+      },
+      "activate": {
+        "iphone": {
+          "title": "iPhone",
+          "steps": "Cài đặt → Di động → Thêm eSIM → Dùng mã QR."
+        },
+        "android": {
+          "title": "Android",
+          "steps": "Cài đặt → Mạng & Internet → SIM → Thêm eSIM → Quét mã QR."
+        },
+        "roaming_note": "Bật Chuyển vùng dữ liệu cho eSIM mới sau khi đến điểm đến của bạn."
+      },
+      "faq": {
+        "q1": {
+          "question": "Khi nào tôi nên đổi eSIM?",
+          "answer": "Bạn có thể đổi trước chuyến đi. Hãy cài và kích hoạt khi sẵn sàng dùng dữ liệu di động."
+        },
+        "q2": {
+          "question": "Tôi có thể đổi một phần đơn hàng không?",
+          "answer": "Có. Nếu đơn hàng có nhiều eSIM, bạn có thể đổi trước số lượng cần dùng."
+        },
+        "q3": {
+          "question": "Nếu mã đã được đổi hết thì sao?",
+          "answer": "Trang sẽ hiển thị trạng thái đã đổi hết và cho phép bạn quay lại để tra mã khác."
+        },
+        "q4": {
+          "question": "Tôi chưa nhận được email QR, phải làm gì?",
+          "answer": "Hãy kiểm tra thư rác trước, sau đó thử lại với đúng địa chỉ email."
+        }
+      }
     }
   },
   "footer": {

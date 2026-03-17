@@ -64,6 +64,88 @@
       "fully_redeemed": "此代金券已全部兑换完毕。",
       "api_error": "与服务器通信时发生错误，请稍后再试。",
       "rate_limited": "尝试次数过多，请稍后再试。"
+    },
+    "guide": {
+      "help_center": "eSIM 帮助中心",
+      "tabs": {
+        "redeem": "兑换",
+        "devices": "设备",
+        "activate": "激活",
+        "faq": "常见问题"
+      },
+      "redeem": {
+        "step1": {
+          "title": "查找订单邮件",
+          "description": "使用确认邮件中的订单码来查找您的购买记录。"
+        },
+        "step2": {
+          "title": "确认订单信息",
+          "description": "兑换前请先核对旅客信息和可用 eSIM 数量。"
+        },
+        "step3": {
+          "title": "选择兑换数量",
+          "description": "先兑换当前需要的数量，剩余 eSIM 可稍后激活。"
+        },
+        "step4": {
+          "title": "确认接收邮箱",
+          "description": "我们会将二维码发送到邮箱，方便在各设备上快速安装。"
+        },
+        "step5": {
+          "title": "在手机上安装并激活",
+          "description": "在目标设备上扫描二维码并按步骤完成激活。"
+        },
+        "tip": "提示：请在稳定网络下完成兑换，并在要使用的设备上直接安装二维码。"
+      },
+      "devices": {
+        "iphone": {
+          "title": "iPhone",
+          "model1": "iPhone XR 及更新机型",
+          "model2": "iPhone SE（第 2 代）及更新机型"
+        },
+        "samsung": {
+          "title": "Samsung Galaxy",
+          "model1": "S20 及更新机型",
+          "model2": "Z Flip/Fold 系列",
+          "model3": "Note 20 及更新机型"
+        },
+        "google": {
+          "title": "Google Pixel",
+          "model1": "Pixel 3 及更新机型"
+        },
+        "other": {
+          "title": "其他设备",
+          "model1": "许多 Oppo、Huawei 和 Motorola 机型也支持 eSIM"
+        }
+      },
+      "activate": {
+        "iphone": {
+          "title": "iPhone",
+          "steps": "设置 → 蜂窝网络 → 添加 eSIM → 使用二维码。"
+        },
+        "android": {
+          "title": "Android",
+          "steps": "设置 → 网络和互联网 → SIM 卡 → 添加 eSIM → 扫描二维码。"
+        },
+        "roaming_note": "到达目的地后，请为新的 eSIM 配置开启数据漫游。"
+      },
+      "faq": {
+        "q1": {
+          "question": "我应该什么时候兑换 eSIM？",
+          "answer": "您可在出行前任意时间兑换，在需要使用移动数据时再安装并激活。"
+        },
+        "q2": {
+          "question": "我可以只兑换部分订单吗？",
+          "answer": "可以。如果订单包含多个 eSIM，您可以先兑换当前需要的数量。"
+        },
+        "q3": {
+          "question": "如果订单已经全部兑换怎么办？",
+          "answer": "页面会显示已全部兑换状态，并允许您返回查询其他订单码。"
+        },
+        "q4": {
+          "question": "我没有收到二维码邮件怎么办？",
+          "answer": "请先检查垃圾邮箱，然后使用正确邮箱地址重试。"
+        }
+      }
     }
   },
   "footer": {
