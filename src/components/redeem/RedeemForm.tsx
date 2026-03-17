@@ -16,7 +16,7 @@ export function RedeemForm({ onSubmit, isLoading }: { onSubmit: (code: string) =
   };
 
   return (
-    <div className="bg-card border rounded-2xl p-6 md:p-8 shadow-sm max-w-md mx-auto w-full">
+    <div className="bg-card border rounded-2xl p-6 md:p-8 shadow-sm mx-auto w-full">
       <h2 className="text-2xl font-bold mb-2">{t('title')}</h2>
       <p className="text-muted-foreground mb-6">{t('subtitle')}</p>
       
@@ -33,7 +33,7 @@ export function RedeemForm({ onSubmit, isLoading }: { onSubmit: (code: string) =
           />
         </div>
         
-        <Button typeof="submit" className="w-full h-12 text-lg font-medium" disabled={isLoading || !code.trim()}>
+        <Button typeof="submit" className="w-full h-12 text-lg font-medium bg-[#ff7c2a] hover:bg-[#e67300]" disabled={isLoading || !code.trim()}>
           {isLoading && <Loader2 className="mr-2 w-5 h-5 animate-spin" />}
           {t('submit')}
         </Button>

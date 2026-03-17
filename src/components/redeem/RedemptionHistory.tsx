@@ -15,8 +15,8 @@ export function RedemptionHistory({ history }: { history: HistoryItem[] }) {
 
   return (
     <div className="mt-8 border rounded-lg bg-card overflow-hidden">
-      <div className="p-4 bg-muted/50 border-b">
-        <h3 className="font-semibold text-sm">{t('history')}</h3>
+      <div className="p-4 bg-[#ff7c2a]/10 border-b border-[#ff7c2a]/20">
+        <h3 className="font-semibold text-sm text-[#ff7c2a]">{t('history')}</h3>
       </div>
       <Table>
         <TableHeader>

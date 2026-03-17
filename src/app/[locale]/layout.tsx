@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-import "../globals.css";
 import { cn } from "@/lib/utils";
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
@@ -19,9 +18,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-import {Navbar} from '@/components/layout/Navbar';
-import {Footer} from '@/components/layout/Footer';
-
 export const metadata: Metadata = {
   title: "eSIM Redemption Hub",
   description: "Redeem your eSIM voucher instantly",
@@ -36,21 +32,19 @@ export default async function RootLayout({
 }>) {
   const {locale} = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as (typeof routing.locales)[number])) {
     notFound();
   }
 
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={cn("font-sans", inter.variable)}>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
-        <NextIntlClientProvider messages={messages}>
-          <main className="flex-1 flex flex-col w-full">
-            {children}
-          </main>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <div className={cn("font-sans", inter.variable, geistSans.variable, geistMono.variable, "antialiased min-h-screen flex flex-col")}>
+      <NextIntlClientProvider messages={messages}>
+        <main className="flex-1 flex flex-col w-full">
+          {children}
+        </main>
+      </NextIntlClientProvider>
+    </div>
   );
 }

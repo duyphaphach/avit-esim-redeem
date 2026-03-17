@@ -45,7 +45,7 @@ export function BookingCard({
   };
 
   return (
-    <div className="w-full max-w-xl mx-auto space-y-6">
+    <div className="w-full mx-auto space-y-6">
       <div className="bg-card border rounded-2xl p-6 md:p-8 shadow-sm">
         
         {/* Booking Details */}
@@ -68,8 +68,8 @@ export function BookingCard({
               <p className="text-xl font-bold text-muted-foreground mt-1">{booking.redeemed}</p>
             </div>
             <div className="text-center">
-              <p className="text-xs text-emerald-600 font-semibold uppercase">{t('remaining')}</p>
-              <p className="text-xl flex font-bold text-emerald-600 mt-1 justify-center">{booking.remaining}</p>
+              <p className="text-xs text-[#ff7c2a] font-semibold uppercase">{t('remaining')}</p>
+              <p className="text-xl flex font-bold text-[#ff7c2a] mt-1 justify-center">{booking.remaining}</p>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ export function BookingCard({
               />
             </div>
             
-            <Button typeof="submit" className="w-full h-12 text-lg" disabled={isLoading || !email.trim() || quantity < 1}>
+            <Button typeof="submit" className="w-full h-12 text-lg bg-[#ff7c2a] hover:bg-[#e67300]" disabled={isLoading || !email.trim() || quantity < 1}>
               {isLoading && <Loader2 className="mr-2 w-5 h-5 animate-spin" />}
               {t('confirm')}
             </Button>

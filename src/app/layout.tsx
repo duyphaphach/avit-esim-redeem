@@ -1,5 +1,12 @@
-import {redirect} from 'next/navigation';
+'use client';
+import './globals.css';
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
-  return children;
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return (
+    <html>
+      <body>
+        {children}
+      </body>
+    </html>
+  )
 }
